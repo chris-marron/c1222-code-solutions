@@ -4,7 +4,7 @@
   <title>HTML Forms</title>
 </head>
 <body>
-
+  <h1>Coding Form!</h1>
   <form action="">
     <div>
       <label for="email">Email</label><br>
@@ -12,33 +12,34 @@
     </div>
 
     <div>
-      <label for="choose">Why is coding cool?</label><br>
-      <select name="option choosing" id="choose">
-        <option value="option">Select a option</option>
-        <option value="interesting">Because its interesting</option>
-        <option value="fun">Because its fun</option>
-        <option value="powerful">Because its powerful</option>
-      </select>
-    </div>
+      <label for="choose">Why is coding cool?</label>
+      <div>
+        <select name="option choosing" id="choose">
+          <option value="option">Select a option</option>
+          <option value="interesting">Because its interesting</option>
+          <option value="fun">Because its fun</option>
+          <option value="powerful">Because its powerful</option>
+        </select>
+      </div>
+      <p>Favorite Language (Choose One)</p>
 
-    <br>
-    <div>
-      <label for="Fav">Favorite Language(choose one)</label>
-    </div>
-    <input type="radio" id="html" name="fav">
-    <label for="html">HTML</label>
-    <input type="radio" id="CSS" name="fav">
-    <label for="CSS">CSS</label>
-    <input type="radio" id="JS" name="fav">
-    <label for="JS">JavaScript</label><br>
-    <p>Would you like to sign up for more information?</p>
-    <div><input type="checkbox" id="Sign">
-      <label for="Sign">Sign me up!</label></div>
+      <input type="radio" id="html" name="fav">
+      <label for="html">HTML</label>
+      <input type="radio" id="CSS" name="fav">
+      <label for="CSS">CSS</label>
+      <input type="radio" id="JS" name="fav">
+      <label for="JS">JavaScript</label>
 
-    <div>
-      <label for="comments">Comments</label></div>
-    <textarea name="comments"></textarea>
-    <div><input type="button" value="Submit"></div>
+      <p>Would you like to sign up for more information?</p>
+      <div><input type="checkbox" id="Sign">
+        <label for="Sign">Sign me up!</label></div>
+
+      <div>
+        <label for="comments">Comments</label></div>
+      <textarea name="comments" id="comments"></textarea>
+      <div>
+        <input type="button" value="Submit" >
+      </div>
   </form>
 
 </body>
