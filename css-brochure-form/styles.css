@@ -2,7 +2,6 @@ h3 {
   font-family: "Brandon Grotesque", sans-serif;
   font-style: normal;
   font-weight: 500;
-  src: url("BrandonGrotesque-Medium.woff2") format("woff2");
   text-align: center;
   color: #ec5d57;
   text-transform: uppercase;
@@ -17,7 +16,6 @@ label {
   margin-left: 15px;
   font-family: "Brandon Grotesque", sans-serif;
   font-style: normal;
-  src: url("BrandonGrotesque-Medium.woff2") format("woff2");
   font-size: 9px;
   padding-top: 10px;
   font-weight: 400;
