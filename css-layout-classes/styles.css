@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.tes {
+  width: 100%;
+}
+
+.column-third {
+  flex-basis: 40%;
+}
+
+.column-two-third {
+  flex-basis: 75%;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
