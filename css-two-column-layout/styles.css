@@ -1,0 +1,58 @@
+.container {
+  margin: auto;
+  width: 800px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+h1,
+.headerp {
+  text-align: center;
+  line-height: 2;
+}
+
+p,
+.headerp {
+  color: #787878;
+  font-size: 12px;
+}
+
+h3,
+p {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: normal;
+}
+
+.column-50 {
+  flex-basis: 10%;
+}
+
+.column-20 {
+  flex-basis: 30%;
+}
+
+.column-full {
+  flex-basis: 100%;
+  padding: 1px 150px;
+}
+
+.test {
+  text-align: center;
+}
+
+button {
+  color: #d14c45;
+  background-color: white;
+  border: 1px solid #d14c45;
+  padding: 7px 30px;
+  margin: 20px;
+}
+
+.heart {
+  height: 90px;
+}
