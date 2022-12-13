@@ -2,7 +2,7 @@ var fullName = 'Chris Marron';
 var isCool = false;
 var totalPets = 0;
 var unknown = null;
-var never =
+var never;
 console.log('value of fullName:', fullName);
 console.log('value of isCool:', isCool);
 console.log('value of totalPets:', totalPets);
