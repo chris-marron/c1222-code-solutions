@@ -13,11 +13,20 @@
   width: 800px;
 }
 
-.merge {
+.tes {
   width: 100px;
+  height: 100px;
   background-color: white;
-  border: 12px solid white;
-  border-radius: 50px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.merge {
+  width: 55px;
+  height: 55px;
+  background-color: white;
+  position: relative;
+  top: 20px;
 }
 
 h2,
