@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-family: Barlow, sans-serif;
+  position: relative;
+  left: 30px;
+}
+
+h3 {
+  font-weight: bold;
+  font-family: Barlow, sans-serif;
+}
+
+p {
+  padding: 20px;
+}
+
+.column-1 {
+  flex-basis: 25%;
+}
+
+.column-2 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+}
+
+.phone-logo {
+  width: 250px;
+  height: 100%;
+}
+
+.logo {
+  width: 80px;
+  height: 100%;
+  text-align: center;
+}
