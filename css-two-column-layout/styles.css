@@ -10,8 +10,6 @@ header {
 .row {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: start;
 }
 
 h1,
@@ -34,13 +32,12 @@ p {
   text-align: left;
 }
 
-.column-test {
-  position: relative;
-  left: 1px;
+.column-5 {
+  flex-basis: auto;
 }
 
 .column-25 {
-  flex-basis: 25%;
+  flex-basis: 30%;
 }
 
 .column-full {
