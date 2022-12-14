@@ -1,0 +1,22 @@
+thead {
+  background-color: black;
+  color: white;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  background-color: eff5f5;
+  border: 1px solid black;
+  padding: 12px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+table.tes tbody > tr:nth-child(odd) {
+  background-color: lightgray;
+}
