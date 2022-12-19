@@ -6,11 +6,20 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: space-evenly;
 }
 
 .column-100 {
   flex-basis: 100%;
+}
+
+.column-50 {
+  flex-basis: 50%;
+}
+
+h3,
+p {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: normal;
 }
