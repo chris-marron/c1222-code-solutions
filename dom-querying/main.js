@@ -1,0 +1,14 @@
+console.log('hello,world');
+var queryH1 = document.querySelector('h1');
+console.log('$heading ', queryH1);
+console.dir(queryH1);
+var queryExp = document.querySelector('#explanation');
+console.log('$explanation ', queryExp);
+console.dir(queryExp);
+var queryHint = document.querySelector('.hint');
+console.log('$hint ', queryHint);
+console.dir(queryHint);
+var queryAllP = document.querySelectorAll('p');
+console.log('$paragraphs ', queryAllP);
+var queryExample = document.querySelectorAll('.example-link');
+console.log('$links ', queryExample);
