@@ -1,8 +1,8 @@
 /* exported getIndexes */
 function getIndexes(array) {
   var arrs = [];
-  array.forEach(arr => {
-    arrs.push(array.indexOf(arr));
-  });
+  for (var i = 0; i < array.length; i++) {
+    arrs.push(i);
+  }
   return arrs;
 }
