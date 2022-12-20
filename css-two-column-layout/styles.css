@@ -6,7 +6,6 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 
 .column-100 {
@@ -22,4 +21,8 @@ p {
   font-size: 12px;
   line-height: 2;
   letter-spacing: normal;
+}
+
+img {
+  width: 25%;
 }
