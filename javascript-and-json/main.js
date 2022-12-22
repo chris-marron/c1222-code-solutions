@@ -18,11 +18,14 @@ var arr = [
 console.log('array of objects:', arr);
 console.log('typeof arr: ', typeof arr);
 
-console.log('JSON.stringify: ', JSON.stringify(arr));
-console.log('typeof JSON.stringify: ', typeof JSON.stringify(arr));
+var stringyJSON = JSON.stringify(arr);
+console.log('JSON.stringify: ', stringyJSON);
+console.log('typeof JSON.stringify: ', typeof stringyJSON);
 
-var stringId = JSON.stringify(3123123123);
-console.log('numberId: ', stringId);
-console.log('typeof numberId: ', typeof stringId);
-console.log('numberId w JSON.parse:', JSON.parse(stringId));
-console.log('typeof JSON.parse: ', typeof JSON.parse(stringId));
+var studentInfo = '{"numberId" : 1502, "name" : "riddick"}';
+console.log('studentInfo: ', studentInfo);
+console.log('typeof studentInfo: ', typeof studentInfo);
+
+var parseJSON = JSON.parse(studentInfo);
+console.log('numberId w JSON.parse:', parseJSON);
+console.log('typeof JSON.parse: ', typeof parseJSON);
