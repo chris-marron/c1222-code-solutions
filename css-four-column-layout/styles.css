@@ -4,47 +4,46 @@
 
 body {
   margin: 0;
+  font-family: Barlow, sans-serif;
 }
 
 h2 {
-  text-align: center;
-  font-weight: bold;
-  font-family: Barlow, sans-serif;
-  position: relative;
-  left: 30px;
-}
-
-h3 {
-  font-weight: bold;
-  font-family: Barlow, sans-serif;
-}
-
-p {
-  padding: 20px;
-}
-
-.column-1 {
-  flex-basis: 25%;
-}
-
-.column-2 {
-  text-align: center;
+  font-size: 18px;
 }
 
 .container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  text-align: center;
+}
+
+.row {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 1200px;
-}
-
-.phone-logo {
-  width: 250px;
-  height: 100%;
-}
-
-.logo {
-  width: 80px;
-  height: 100%;
   text-align: center;
+}
+
+.column-10 {
+  flex-basis: 10%;
+}
+
+.phone {
+  width: 200px;
+}
+
+.icons {
+  width: 50px;
+}
+
+.function {
+  font-size: 12px;
+}
+
+.desc {
+  font-size: 10px;
+  font-weight: normal;
 }
