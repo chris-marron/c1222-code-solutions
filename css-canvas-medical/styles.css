@@ -116,7 +116,17 @@ hr {
   margin-top: 30px;
 }
 
-.column-textimg {
+.spacetext {
+  letter-spacing: 0.5px;
+  font-weight: normal;
+  font-size: 28px;
+}
+
+.pinimage {
+  line-height: 18px;
+}
+
+.organize-textimg {
   position: absolute;
   left: 100px;
   top: 100px;
@@ -135,6 +145,7 @@ h1:nth-child(n) {
 .tes {
   position: absolute;
   top: 250px;
+  margin-top: 10px;
 }
 
 /* Clinical Prefer Canvas ------------------------------- */
@@ -170,7 +181,7 @@ h1:nth-child(n) {
 /* inbetween */
 .moveleft {
   position: relative;
-  right: 80px;
+  right: 70px;
 }
 
 .column-75 {
@@ -179,7 +190,7 @@ h1:nth-child(n) {
 
 .h3pos {
   position: relative;
-  left: 2%;
+  left: 3%;
 }
 
 .meet {
