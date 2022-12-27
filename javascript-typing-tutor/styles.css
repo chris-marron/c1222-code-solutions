@@ -13,3 +13,11 @@ body {
 span {
   border-bottom: 1px solid black;
 }
+
+.pressed {
+  color: greenyellow;
+}
+
+.wrong-key {
+  color: red;
+}
