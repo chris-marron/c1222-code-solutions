@@ -10,8 +10,9 @@ body {
   min-height: 100vh;
 }
 
-span {
-  border-bottom: 1px solid black;
+.start {
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 .pressed {
@@ -20,4 +21,12 @@ span {
 
 .wrong-key {
   color: red;
+}
+
+.current {
+  color: black;
+}
+
+.whitespace {
+  white-space: pre;
 }
