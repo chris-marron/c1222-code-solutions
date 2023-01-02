@@ -11,8 +11,7 @@ body {
 }
 
 .start {
-  text-decoration: underline;
-  text-underline-position: under;
+  border-bottom: 2px solid black;
 }
 
 .pressed {
