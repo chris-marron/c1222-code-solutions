@@ -7,17 +7,18 @@ function characterHandler(e) {
     start = 0;
     test[0].className = 'start current';
     for (var i = 1; i < test.length; i++) {
-      test[i].className = 'whitespace';
+      test[i].className = '';
     }
   }
   if (e.key === test[start].textContent) {
     if (start < test.length) {
       test[start].className += ' pressed';
       if (test[start].className.includes('start')) {
-        test[start].className = 'pressed whitespace';
+        test[start].className = 'pressed ';
       }
       start++;
-      test[start].className = 'start whitespace';
+      test[start].className = 'start';
+
     }
   } else {
     test[start].className += ' wrong-key';
