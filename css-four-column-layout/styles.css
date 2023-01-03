@@ -12,9 +12,8 @@ h2 {
 }
 
 .container {
-  width: 1000px;
+  width: 800px;
   margin: 0 auto;
-  padding: 0 1rem;
 }
 
 .header {
@@ -23,7 +22,13 @@ h2 {
 
 .row {
   display: flex;
+}
+
+.justify-content {
   justify-content: center;
+}
+
+.text-align {
   text-align: center;
 }
 
