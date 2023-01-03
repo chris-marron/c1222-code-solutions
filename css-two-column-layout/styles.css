@@ -1,0 +1,72 @@
+h3,
+p {
+  font-size: 12px;
+  line-height: 2;
+}
+
+h3 {
+  letter-spacing: 0.5px;
+}
+
+img {
+  width: 25%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.header-text {
+  width: 65%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.column-100 {
+  flex-basis: 100%;
+}
+
+.column-50 {
+  flex-basis: 50%;
+}
+
+.column-32 {
+  flex-basis: 32%;
+}
+
+.images {
+  width: 100px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+  margin-left: 2px;
+}
+
+.column-auto {
+  flex-basis: auto;
+}
+
+.learn-more {
+  padding: 10px 40px;
+  background-color: white;
+  border: 2px solid #d45751;
+  color: #d45751;
+  margin-bottom: 100px;
+}
