@@ -8,17 +8,17 @@
 </head>
 <body>
   <script>
-    var greetings = [
-      'hello!',
-      'konichiwa!',
-      'nihao',
-      'bonjour',
-      'gutten tag',
-      'hola'
-    ];
+    const greetings = [
+  'hello!',
+  'konichiwa!',
+  'nihao',
+  'bonjour',
+  'gutten tag',
+  'hola'
+];
 
     function logAllGreetings(greetingList) {
-      var i = 0;
+      let i = 0;
       while (i < greetingList.length) {
         console.log('Current greeting:', greetingList[i]);
         i++;
@@ -27,8 +27,8 @@
     logAllGreetings(greetings);
 
     function getRandomGreeting(greetingList) {
-      var randomIndex = Math.floor(Math.random() * greetingList.length);
-      var greeting = greetingList[randomIndex];
+      const randomIndex = Math.floor(Math.random() * greetingList.length);
+      let greeting = greetingList[randomIndex];
       if (randomIndex === 1) {
         greeting = greeting + ' is a japanese greeting.';
       }
@@ -43,7 +43,7 @@
     logAllGreetings(greetings);
 
     console.log('This variable is currently undefined due to hoisting, please fix: ', variable);
-    var variable = 'meow';
+    const variable = 'meow';
   </script>
 </body>
 </html>
