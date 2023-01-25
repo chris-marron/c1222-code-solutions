@@ -1,0 +1,500 @@
+   84  git pull origin main
+   85  git status
+   86  git branch javascript-local-storage
+   87  git branch --list
+   88  git switch javascript-local-storage
+   89  git status
+   90  git add javascript-local-storage
+   91  git status
+   92  git commit -m 'Completed javascript-local-storage'
+   93  git push origin javascript-local-storage
+   94  git switch main
+   95  git pull origin main
+   96  git switch javascript-and-json
+   97  gti status
+   98  git status
+   99  git add javascript-and-json
+  100  git status
+  101  git commit -m 'added string'
+  102  git push origin javascript-and-json
+  103  git status
+  104  git switch main
+  105  git status
+  106  git switch main
+  107  gti pull origin main
+  108  git pull origin main
+  109  git status
+  110  git branch javascript-typing-tutor
+  111  git branch --list
+  112  git status
+  113  git switch javascript-typing-tutor
+  114  git status
+  115  git status
+  116  git add javascript-typing-tutor
+  117  git commmit -m 'in progress'
+  118  git commit -m 'in progress'
+  119  git status
+  120  git pull origin main
+  121  git switch css-two-column-layout
+  122  git status
+  123  git add css-two-column-layout
+  124  git status
+  125  git commit -m 'added more'
+  126  git commit -m 'added more'
+  127  git commit -m 'added more'
+  128  git commit -m 'added more'
+  129  git status
+  130  git add css-two-column-layout
+  131  git status
+  132  git commit -m 'added more'
+  133  git push origin css-two-column-layout
+  134  git status'
+  135  '
+  136  git status
+  137  git switch main
+  138  git pull origin main
+  139  git switch css-four-column-layout
+  140  git status
+  141  git add css-four-column-layout
+  142  git status
+  143  git commit -m 'changed columns around'
+  144  git push origin css-four-column-layout
+  145  git switch main
+  146  git pull origin main
+  147  git status
+  148  git switch css-canvas-medical
+  149  git status
+  150  git add css-canvas-medical
+  151  git commit -m 'changed columns'
+  152  git status
+  153  git add css-canvas-medical
+  154  git status
+  155  git commit -m 'finishing touches'
+  156  git push origin css-canvas-medical
+  157  git switch main
+  158  git pull origin main
+  159  git switch javascript-typing-tutor
+  160  git add javascript-typing-tutor
+  161  git status
+  162  git commit -m 'in progress'
+  163  git commit -m 'in progress'
+  164  git switch main
+  165  git add javascript-typing-tutor
+  166  git commit -m 'in progress'
+  167  git switch main
+  168  git pull origin main
+  169  git status
+  170  git switch main
+  171  git pull origin main
+  172  git status
+  173  git status
+  174  git switch javascript-typing-tutor
+  175  git status
+  176  git add . 
+  177  git status
+  178  git commit -m 'reset all js'
+  179  git push origin javascript-typing-tutor
+  180  git status
+  181  git add .
+  182  git status
+  183  git commit -m 'added function and if statements. messing with whitespace.'
+  184  git status
+  185  git add .
+  186  git commit -m 'added whitespace to make it look better.'
+  187  git push origin javascript-typing-tutor
+  188  git status
+  189  git switch main
+  190  git pull origin main
+  191  git switch css-four-column-layout
+  192  git status
+  193  git add .
+  194  git commit -m 'seperated justify content and text align from row'
+  195  git push origin css-four-column-layout
+  196  git switch main
+  197  git status 
+  198  git pull origin main
+  199  git switch css-two-column-layout
+  200  git status
+  201  git add .
+  202  git status
+  203  git commit -m 'completed late two-column'
+  204  git push origin css-two-column-layout
+  205  git switch main
+  206  git status
+  207  git switch main
+  208  git pull origin main
+  209  git branch javascript-this-basics
+  210  git branch --list
+  211  git switch javascript-this-basics
+  212  git status
+  213  git add javascript-this
+  214  git status
+  215  git commit -m 'Completed javascript-this
+  216  '
+  217  git push origin javascript-this-basics
+  218  git status
+  219  git switch main
+  220  git pull origin main
+  221  git switch javascript-this-basics
+  222  git branch -M javascript-this
+  223  git push origin javascript-this
+  224  git status
+  225  git status
+  226  git status
+  227  git switch main
+  228  git pull origin main
+  229  git status
+  230  git branch javascript-prototypes
+  231  git branch --list
+  232  git switch javascript-prototypes
+  233  git status
+  234  git status
+  235  git add javascript-prototypes
+  236  git status
+  237  git commit -m 'Completed javascript-prototypes'
+  238  git push origin javascript-prototypes
+  239  git status
+  240  git switch main
+  241  git pull origin main
+  242  git status
+  243  git branch javascript-constructors
+  244  git branch --list
+  245  git status
+  246  git switch javascript-constructors
+  247  git status
+  248  git add .
+  249  git status
+  250  git commit -m 'Completed javascript-constructor'
+  251  git push origin javascript-constructors'
+  252  '
+  253  git push origin javascript-constructors
+  254  git switch main
+  255  git pull origin main
+  256  git status
+  257  git switch main
+  258  git pull origin main
+  259  git branch javascript-timers
+  260  git branch --list
+  261  git switch javascript-timers
+  262  git status
+  263  git add .
+  264  git commit -m 'Completed javascript-timers'
+  265  git push origin javascript-timers
+  266  git switch main
+  267  git pull origin main
+  268  git status
+  269  git pull origin main
+  270  git branch http-messages
+  271  git branch --list
+  272  git switch http-messages
+  273  http https://example.com
+  274  http --verbose  https://example.com
+  275  http --verbose  https://www.example.com
+  276  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+  277  http --body GET https://example.com > http-messages/index.html
+  278  git status
+  279  git add . 
+  280  git commit -m 'Completed https-messages'
+  281  git push origin http-messages
+  282  git switch main
+  283  git pull origin main
+  284  git branch javascript-ajax
+  285  git branch --list
+  286  git swith javascript-ajax
+  287  git swith javascript-ajax
+  288  git switch javascript-ajax
+  289  git status
+  290  git add .
+  291  git status
+  292  git commit -m 'Completed javascript-ajax'
+  293  git push origin javascript-ajax
+  294  git status
+  295  git switch main
+  296  git pull origin main
+  297  http http://ddragon.leagueoflegends.com/cdn/12.23.1/data/en_US/champion.json
+  298  http https://xivapi.com	
+  299  git status
+  300  git pull origin main
+  301  git branch practice-run
+  302  git branch --list
+  303  git switch practice-run
+  304  git status
+  305  git add .
+  306  git commit -m 'nothin'
+  307  git switch main
+  308  git pull origin main
+  309  https http://ddragon.leagueoflegends.com/cdn/12.23.1/data/en_US/champion.json
+  310  http http://ddragon.leagueoflegends.com/cdn/12.23.1/data/en_US/champion.json
+  311  git switch practice-run
+  312  http https://best-overwatch-api.herokuapp.com/heroes
+  313  http na1.api.riotgames.com
+  314  git statis
+  315  git status
+  316  http na1.api.riotgames.com
+  317  git status
+  318  http http://ddragon.leagueoflegends.com/cdn/12.23.1/data/en_US/champion.json
+  319  http http://ddragon.leagueoflegends.com/cdn/img/champion/splash
+  320  http http://rank.shoryuken.com/api/
+  321  http https://the-dune-api.herokuapp.com/
+  322  http https://the-dune-api.herokuapp.com/
+  323  http https://api.mangadex.org/
+  324  http https://api.mangadex.org/manga
+  325  http http://api.anidb.net:9001/httpapi?request=anime
+  326  http https://api.mangadex.org/manga/{id}
+  327  http https://api.mangadex.org/
+  328  http https://api.mangadex.org/cover
+  329  http https://api.waifu.pics/type/category	
+  330  http https://api.waifu.pics/many/type/category	
+  331  http https://api.waifu.pics 
+  332  http https://api.waifu.pics
+  333  http https://api.waifu.pics/type/category	
+  334  git switch main
+  335  git status
+  336  git add .
+  337  git commit -m 'notin'
+  338  git commit -m 'notin' --no-verify
+  339  git switch javascript-ajax
+  340  http https://pokeapi.co/api/v2/pokemon/
+  341  http https://api.mangadex.org/
+  342  http https://api.jikan.moe/v4/~
+  343  http https://api.jikan.moe/v4/
+  344  http https://api.jikan.moe/v4/manga
+  345  git status
+  346  git switch practice-run
+  347  git statua
+  348  git status
+  349  git commit -m 'nothing'
+  350  git add .
+  351  git commit -m 'nothing'
+  352  git commit -m 'nothing' --no-verify
+  353  git status
+  354  git status
+  355  git add .
+  356  git commit -m 
+  357  git commit -m 'nothin' --no-verify
+  358  git switch main
+  359  git pull origin main
+  360  git status
+  361  git branch string-manipulation-2
+  362  git branch --list
+  363  git switch string-manipulation-2
+  364  git status
+  365  git add .
+  366  git coomit -m 'in progress'
+  367  git commit -m 'in progress'
+  368  git switch  mian'
+  369  '
+  370  git switch mian
+  371  git switch main
+  372  git pull origin main
+  373  git status
+  374  git switch practice-tun
+  375  git switch practice-run
+  376  http https://api.jikan.moe/v4/manga/{id}/full
+  377  git status
+  378  git add .
+  379  git commit -m 'nothin'
+  380  git commit -m 'nothin' --no-verify
+  381  git switch main
+  382  git status
+  383  git pull origin main
+  384  git switch string-manipulation-2
+  385  git status
+  386  git add .
+  387  git commit -m 'completed string manipulation 2'
+  388  git push origin string-manipulation-2
+  389  git switch main
+  390  git pull origin main
+  391  git status
+  392  git switch practice-run
+  393  git status
+  394  git switch main
+  395  git pull origin main
+  396  git status
+  397  git branch array-manipulation-2
+  398  git branch --list
+  399  git status
+  400  git switch array-manipulation-2
+  401  git switch main
+  402  git switch string-manipulation-2
+  403  git status
+  404  git add .
+  405  git status
+  406  git reset
+  407  git status
+  408  git add string-manipulation-2
+  409  git statu
+  410  git status
+  411  git commit -m 'changed all the mumbo to return JavaScript'
+  412  git status
+  413  git push origin string-manipulation-2
+  414  git switch array-manipulation-2
+  415  git status
+  416  git add .
+  417  git commit -m 'completed array-manipulation-2'
+  418  git push origin array-manipulation-2
+  419  git switch main
+  420  git status
+  421  git pull origin main
+  422  git branch object-manipulation-2
+  423  git branch --list
+  424  git switch object-manipulation-2
+  425  git status
+  426  git add .
+  427  git status
+  428  git commit -m 'in-progress'
+  429  git switch main
+  430  git status
+  431  git pull origin main
+  432  git branch es6-const-let
+  433  git branch --list
+  434  git switch es6-const-let
+  435  git status
+  436  git add .
+  437  git commit -m 'completed es6-const-let'
+  438  git push origin es6-const-let
+  439  git status 
+  440  git switch main
+  441  git add .
+  442  git commit -m 'es6-const-let'
+  443  git push origin es6-const-let
+  444  git switch mian
+  445  git switch main
+  446  git switch es6-const-let
+  447  git status
+  448  git add .
+  449  git commit -m 'was getting error because I moved cont variable'
+  450  git pushed origin es6-const-let
+  451  git push origin es6-const-let
+  452  git switch main
+  453  git pull origin main
+  454  git status
+  455  git branch es6-template-literals
+  456  git branch --list
+  457  git switch es6-template-literals
+  458  git status
+  459  git add .
+  460  git commit -m 'completed es6-template-literals'
+  461  git push origin es6-template-literals
+  462  git status
+  463  git switch mian
+  464  git pull origin main
+  465  git status
+  466  git switch main
+  467  git pull origin main
+  468  git branch es6-destructuring
+  469  git branch --list
+  470  git status
+  471  git switch es6-destructuring
+  472  git status
+  473  git status
+  474  git add . 
+  475  git commit -m 'completed es6-destructuring'
+  476  git push origin es6-destructuring
+  477  git switch main
+  478  git pull origin main
+  479  git status
+  480  git branch es6-arrow-functions
+  481  git branch --list
+  482  git switch es6-arrow-functions
+  483  git status
+  484  git add .
+  485  git status
+  486  git commit -m 'completed es6-arrow-functions'
+  487  git push origin es6-arrow-functions
+  488  git switch main
+  489  git status
+  490  git pull origin main
+  491  git status
+  492  git pull origin main
+  493  git branch command-line-basics
+  494  git branch --list
+  495  git switch command-line-basics
+  496  cd command-line-basics
+  497  man man
+  498  man cat
+  499  man cat - laziness.txt
+  500  cat - laziness.txt
+  501  git status
+  502  cd command-line-basics
+  503  man man
+  504  man cat
+  505  cat
+  506  cat laziness.txt
+  507  cat impatience.txt
+  508  cat hubris.txt
+  509  man cat
+  510  cat laziness.txt impatience.txt hubris.txt
+  511  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  512  cat three-virtues.txt
+  513  man ls
+  514  ls command-line-basics
+  515  man 1s
+  516  ls lfz-staff
+  517  ls command-line-basics
+  518  ls -a lfz-staff
+  519  ls -F lfz-staff
+  520  ls -aF lfz-staff
+  521  ls -aF lfz-staff > lfz-staff/contents.txt
+  522  cat lfz-staff/contents.txt
+  523  man pwd
+  524  pwd command-line-basics
+  525  pwd > i-was-here.txt
+  526  ls command-line-basics
+  527  ls i-was-here.txt
+  528  ls command-line-basics
+  529  ls -a command-line-basics 
+  530  ls -F command-line-basics 
+  531  cat i-was-here.txt
+  532  man echo
+  533  echo 'Hello, World'
+  534  echo 'Hello, World!'
+  535  ehco 'Hello, World!' > hello.txt
+  536  echo 'Hello, World!' > hello.txt
+  537  ls command-line-basics
+  538  man ls
+  539  ls
+  540  cat hello.tx
+  541  cat hello.txt
+  542  man touch
+  543  man touch
+  544  touch tag-youre-it.txt
+  545  touch snoot/boop.txt
+  546  ls snoot
+  547  man mkdir
+  548  mkdir parent
+  549  ls
+  550  mkdir -p parent/child/grandchild
+  551  touch .gitkeep parent/child/grandchild
+  552  touch  parent/child/grandchild/.gitkeep
+  553  touch .gitkeep > parent/child/grandchild
+  554  man touch
+  555  touch parent/child/grandchild/.gitkeep
+  556  ls -a
+  557  touch .gitkeep parent/child/grandchild
+  558  ls -a
+  559  man touch
+  560  touch parent/child/grandchild/.gitkeep
+  561  ls -a
+  562  ls -a parent
+  563  ls -a parent/child/grandchild
+  564  man mv
+  565  man mv
+  566  mv pokiemans pokemon
+  567  ls
+  568  man rm
+  569  man rm
+  570  rm lol.txt
+  571  ls
+  572  rm -r kill-me/
+  573  ls
+  574  man cp
+  575  man cp
+  576  and-then.txt no-and-then.txt
+  577  cp and-then.txt no-and-then.txt
+  578  ls
+  579  cat and-then.txt no-and-then.txt
+  580  man history
+  581  man history
+  582  history
+  583  history > command-history.txt
