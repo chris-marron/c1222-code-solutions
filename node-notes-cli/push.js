@@ -1,18 +1,33 @@
 const fs = require('fs');
 const data = require('./data.json');
-const pro = process.argv[2];
 const dataNotes = data.notes;
+const arg2 = process.argv[2];
 const create = process.argv[3];
-const pro4 = process.argv[4];
+const update = process.argv[4];
 
-if (pro === 'read') {
-  for (const [key, value] of Object.entries(dataNotes)) {
-    console.log(`${key}: ${value}`);
+if (arg2 === 'read') {
+  for (const key in data.notes) {
+    console.log(`${key}: ${data.notes[key]}`);
   }
-} else if (pro === 'create') {
+} else if (arg2 === 'create') {
+  dataNotes[data.nextId] = create;
   data.nextId++;
-  dataNotes[data.nextId.toString()] = create;
   const json = JSON.stringify(data, null, 2);
-  fs.writeFile('data.json', json, 'utf8', err => {
+  fs.writeFile('data.json', json, err => {
     if (err) throw err;
   });
+} else if (arg2 === 'delete') {
+  delete data.notes[create];
+  const json = JSON.stringify(data, null, 2);
+
+  fs.writeFile('data.json', json, err => {
+    if (err) throw err;
+  });
+} else if (arg2 === 'update') {
+  data.notes[create] = update;
+  const json = JSON.stringify(data, null, 2);
+
+  fs.writeFile('data.json', json, err => {
+    if (err) throw err;
+  });
+}
