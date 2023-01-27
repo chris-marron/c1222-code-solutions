@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const arr = [];
 
 const grades = {
   12: {
@@ -24,6 +23,8 @@ const grades = {
 };
 
 app.use('/api/grades', (req, res) => {
+  const arr = [];
+
   for (const gray in grades) {
     arr.push(grades[gray]);
 
@@ -35,12 +36,3 @@ app.listen(3000, () => {
   // eslint-disable-next-line no-console
   console.log('listen:');
 });
-
-// const ok = grade => {
-//   for (const gray in grade) {
-//     arr.push(grade[gray]);
-
-//   }
-//   return arr;
-
-// };
