@@ -22,7 +22,7 @@ const grades = {
   }
 };
 
-app.use('/api/grades', (req, res) => {
+app.get('/api/grades', (req, res) => {
   const arr = [];
 
   for (const gray in grades) {
