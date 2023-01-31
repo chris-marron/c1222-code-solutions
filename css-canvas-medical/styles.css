@@ -98,12 +98,13 @@ hr {
 
 .textok {
   position: absolute;
+  text-align: left;
   top: 20px;
+  left: 70px;
   font-weight: normal;
 }
 
-.row4 {
-  display: flex;
+.text-align {
   text-align: center;
 }
 
@@ -143,20 +144,24 @@ h1:nth-child(n) {
 }
 
 .tes {
-  position: absolute;
-  top: 250px;
-  margin-top: 10px;
+  position: relative;
 }
 
 /* Clinical Prefer Canvas ------------------------------- */
 .row2 {
   display: flex;
   flex-wrap: wrap;
+}
+
+.justify-content {
   justify-content: space-evenly;
+  text-align: center;
+}
+
+.bg-color {
   background-color: #fafafa;
   margin: 10px;
   padding: 20px 0;
-  text-align: center;
 }
 
 .row-2-h2 {
@@ -206,10 +211,8 @@ h1:nth-child(n) {
 }
 
 /* Gray Canvas ----------------------------- */
-.row3 {
+.bg-color-grey {
   background-color: #525351;
-  display: flex;
-  justify-content: space-around;
   padding: 80px 5px;
 }
 
