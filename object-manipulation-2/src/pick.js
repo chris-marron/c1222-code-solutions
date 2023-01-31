@@ -1,6 +1,10 @@
 /* exported pick */
-// function pick(source, keys) {
-//   for (const coing in source) {
-//     console.log(keys);
-//   }
-// }
+function pick(source, keys) {
+  var object = {};
+  for (var key of keys) {
+    if (source[key] !== undefined) {
+      object[key] = source[key];
+    }
+  }
+  return object;
+}
