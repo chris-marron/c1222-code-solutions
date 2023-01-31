@@ -1,5 +1,5 @@
 SELECT "line1",
-"city"."name",
+"city"."name" as "city",
 "district",
 "countries"."name" as "country"
 from "cities" as "city"
