@@ -8,12 +8,12 @@ const db = new pg.Pool({
 });
 const express = require('express');
 const app = express();
-const ok = require('./queries');
+const queries = require('./queries');
 app.use(express.json());
 
 app.get('/api/grades', (req, res) => {
 
-  db.query(ok.GET)
+  db.query(queries.GET_ALL_GRADES)
     .then(results => {
       const all = results.rows;
       res.status(200).json(all);
@@ -28,7 +28,7 @@ app.get('/api/grades/:gradeId', (req, res) => {
   if (!Number.isInteger(gradeId) || gradeId <= 0) {
     res.status(400).json({ error: 'grade id must be a positive integer' });
   }
-  db.query(ok.doesGradeIdExist, [gradeId])
+  db.query(queries.GET_GRADE, [gradeId])
     .then(result => {
       const grade = result.rows[0];
       if (!grade) {
@@ -58,9 +58,9 @@ app.post('/api/grades', (req, res) => {
     return;
   }
 
-  db.query(ok.INSERT, [name, course, score])
+  db.query(queries.INSERT_GRADE, [name, course, nums])
     .then(result => {
-      res.status(201).send(req.body);
+      res.status(201).send(result.rows[0]);
     })
     .catch(error => {
       console.error(error);
@@ -74,9 +74,9 @@ app.delete('/api/grades/:gradeId', (req, res) => {
   if (!Number.isInteger(gradeId) || gradeId <= 0) {
     res.status(400).json({ error: 'grade id must be a positive integer' });
   }
-  db.query(ok.DELETE, [gradeId])
+  db.query(queries.DELETE_GRADE, [gradeId])
     .then(result => {
-      const grade = result.rowCount;
+      const grade = result.rows[0];
       if (grade === 0) {
         res.status(404).send({ error: `${gradeId} does not exist` });
       } else {
@@ -99,13 +99,13 @@ app.put('/api/grades/:gradeId', (req, res) => {
     res.status(400).json({ error: 'invalid name,course, or score' });
   }
 
-  db.query(ok.UPDATE, [gradeId, name, course, score])
+  db.query(queries.UPDATE_GRADE, [gradeId, name, course, score])
     .then(result => {
       const grade = result.rows.length;
       if (grade === 0) {
         res.status(404).json({ error: `cannot find grade with gradeId ${gradeId}` });
       } else {
-        res.sendStatus(200);
+        res.status(200).send(result.rows[0]);
       }
     })
     .catch(error => {
