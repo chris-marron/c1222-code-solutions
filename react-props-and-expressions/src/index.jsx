@@ -4,9 +4,13 @@ import ReactDOM from 'react-dom/client';
 export default function CustomButton(props) {
   return <button>{props.text}</button>;
 }
+// const Test = {
+//   firstName: 'garry',
+//   lastName: 'berry'
+// };
 const element = (
   <div>
-    <CustomButton text="I" />
+    <CustomButton Test={2 + 2} />
     <CustomButton text="know" />
     <CustomButton text="React!" />
   </div>
