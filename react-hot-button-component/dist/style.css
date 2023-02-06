@@ -36,13 +36,6 @@
   cursor: pointer;
 }
 
-.button-after-15 {
-  background-color: yellow;
-  padding: 20px 40px;
-  box-shadow: 3px 3px 1px 1px black;
-  cursor: pointer;
-}
-
 .button-after-18 {
   background-color: white;
   color: black;
@@ -51,6 +44,9 @@
   cursor: pointer;
 }
 
-.hidden {
-  display: none;
+.reset-me {
+  background-color: yellow;
+  padding: 20px 40px;
+  box-shadow: 3px 3px 1px 1px black;
+  cursor: pointer;
 }
