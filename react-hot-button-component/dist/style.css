@@ -1,0 +1,52 @@
+.button-after-0 {
+  background-color: greenyellow;
+  padding: 20px 40px;
+  box-shadow: 3px 3px 1px 1px black;
+  cursor: pointer;
+}
+
+.button-after-3 {
+  background-color: #351b75;
+  padding: 20px 40px;
+  box-shadow: 3px 3px 1px 1px black;
+  color: white;
+  cursor: pointer;
+}
+
+.button-after-6 {
+  background-color: #674ea7;
+  padding: 20px 40px;
+  box-shadow: 3px 3px 1px 1px black;
+  color: white;
+  cursor: pointer;
+}
+
+.button-after-9 {
+  background-color: #e06666;
+  padding: 20px 40px;
+  box-shadow: 3px 3px 1px 1px black;
+  color: white;
+  cursor: pointer;
+}
+
+.button-after-12 {
+  background-color: #f6b26b;
+  padding: 20px 40px;
+  box-shadow: 3px 3px 1px 1px black;
+  cursor: pointer;
+}
+
+.button-after-18 {
+  background-color: white;
+  color: black;
+  padding: 20px 40px;
+  box-shadow: 3px 3px 1px 1px black;
+  cursor: pointer;
+}
+
+.reset-me {
+  background-color: yellow;
+  padding: 20px 40px;
+  box-shadow: 3px 3px 1px 1px black;
+  cursor: pointer;
+}
