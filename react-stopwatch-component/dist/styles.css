@@ -1,0 +1,32 @@
+#root {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circle {
+  width: 400px;
+  height: 400px;
+}
+
+.play {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.num {
+  position: absolute;
+  left: 180px;
+  top: 80px;
+  font-size: 100px;
+}
+
+.pause {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
