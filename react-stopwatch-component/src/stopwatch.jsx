@@ -3,35 +3,32 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/free-regular-svg-icons';
 import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
 export default function Stopwatch({ into }) {
-  const [begin, ok] = useState(0);
+  const [begin, realTime] = useState(0);
   const [timerOn, setTime] = useState(false);
-  const [isPaused, setIsPaused] = useState(false);
-  const [test1, test2] = useState();
+  const [clearIntervalID, setIntervalID] = useState();
+
   function onStart() {
     setTime(true);
-    test2(setInterval(() => {
-      ok(begin => begin + 1);
-    }, 1000));
+    const interval = setInterval(() => {
+      realTime(begin => begin + 1);
+    }, 1000);
+    setIntervalID(interval);
   }
 
   function handlePause() {
-    clearInterval(test2);
+    clearInterval(clearIntervalID);
     setTime(false);
   }
-  function resume() {
-    setIsPaused(true);
-    into = setInterval(() => {
-      ok(begin => begin + 1);
-    }, 1000);
+  function resetOnPause() {
+    if (!timerOn) return realTime(0);
   }
+
   return (
     <>
       <div className='play-on'>
         <h1 className='num'>{begin}</h1>
-        <FontAwesomeIcon icon={faCircle} className="circle" onClick={() => {
-          ok(0);
-        }}/>
-        {!timerOn && !isPaused
+        <FontAwesomeIcon icon={faCircle} className="circle" onClick={resetOnPause} />
+        {!timerOn
           ? <FontAwesomeIcon onClick={onStart} icon={faPlay} className='play'/>
           : (
             <FontAwesomeIcon icon={faPause} onClick={handlePause} className='pause'/>)

@@ -1,6 +1,7 @@
 #root {
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  width: 100px;
+  flex-wrap: wrap;
 }
 
 .circle {
@@ -16,9 +17,9 @@
 
 .num {
   position: absolute;
-  left: 180px;
-  top: 80px;
-  font-size: 100px;
+  left: 13%;
+  top: 12%;
+  font-size: 5em;
 }
 
 .pause {
@@ -27,6 +28,6 @@
   cursor: pointer;
 }
 
-.hidden {
-  display: none;
+.play-on {
+  text-align: center;
 }
