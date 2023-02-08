@@ -18,7 +18,7 @@ export default function ValidatedInput() {
     }
 
   }
-  const small = !tooShort ? 'xmark' : 'check';
+  const markOrCheck = !tooShort ? 'xmark' : 'check';
 
   return (
     <div className='row'>
@@ -26,7 +26,7 @@ export default function ValidatedInput() {
         <h1 className='pass'>Password</h1>
         <label htmlFor="">
           <input name='password' type="password" value={isPassword} required onChange={isEight} className='bar'/>
-          <i className={`fa-solid fa-${small}`}></i>
+          <i className={`fa-solid fa-${markOrCheck}`}></i>
           {isPassword === '' ? <p className='error'>A password is required.</p> : ''}
           {isPassword.length <= 8 && isPassword !== '' ? <p className='error'>Your password is too short</p> : ''}
         </label>
