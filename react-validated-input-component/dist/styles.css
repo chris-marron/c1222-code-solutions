@@ -1,0 +1,37 @@
+#root {
+  width: 800px;
+  font-family: sans-serif;
+}
+
+.row {
+  display: flex;
+}
+
+.fa-check {
+  color: green;
+  margin-left: 5px;
+  font-size: 25px;
+  position: relative;
+  top: 3px;
+}
+
+.fa-xmark {
+  color: red;
+  margin-left: 10px;
+  font-size: 25px;
+  position: relative;
+  top: 4px;
+}
+
+.error {
+  color: red;
+  margin: 0;
+}
+
+.pass {
+  margin: 0;
+}
+
+.bar {
+  padding-right: 50px;
+}
