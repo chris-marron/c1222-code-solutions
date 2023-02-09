@@ -3,21 +3,21 @@ import React, { useState } from 'react';
 export default function Accordion({ data }) {
   const [active, setActive] = useState(null);
 
-  const toggle = i => {
-    if (active === i) {
+  const toggle = key => {
+    if (active === key) {
       return setActive(null);
     }
-    setActive(i);
+    setActive(key);
   };
 
   return (
-    <div className='wrapper'>
+    <div className='row justify-align'>
       <div className='accor'>
-        {data.map((tes, i) => {
+        {data.map(language => {
           return (
-            <div key={data.key} className='item'>
-              <div className="acc" onClick={() => toggle(i)}><h2>{tes.title}</h2></div>
-              <div className={active === i ? 'show' : 'hide'}> {tes.info.toUpperCase()}</div>
+            <div key={language.key} className='item'>
+              <div className="acc" onClick={() => toggle(language.key)}><h2>{language.title}</h2></div>
+              <div className={active === language.key ? 'show' : 'hide'}> {language.info.toUpperCase()}</div>
             </div>
           );
         })}
