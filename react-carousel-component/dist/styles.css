@@ -19,6 +19,7 @@ img {
   width: 50%;
   object-fit: cover;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .fa-angle-left {
