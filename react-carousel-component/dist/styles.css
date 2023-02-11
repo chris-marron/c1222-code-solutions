@@ -1,0 +1,60 @@
+body {
+  background-color: #191a1c;
+}
+
+.row {
+  display: flex;
+}
+
+.justify {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+img {
+  height: 80%;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fa-angle-left {
+  position: absolute;
+  cursor: pointer;
+  font-size: 50px;
+  color: white;
+  left: 26%;
+  top: 50%;
+  z-index: 1;
+}
+
+.fa-angle-right {
+  position: absolute;
+  cursor: pointer;
+  font-size: 50px;
+  color: white;
+  right: 26%;
+  top: 50%;
+  z-index: 1;
+}
+
+.fa-circle {
+  color: white;
+  padding-right: 10px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.test {
+  display: flex;
+  position: absolute;
+  bottom: 90px;
+}
+
+.dark {
+  color: #191a1c;
+}
