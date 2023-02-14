@@ -6,6 +6,7 @@ import TodoForm from './todo-form';
 
 export default function App() {
   const [todos, setTodos] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     /**
@@ -18,7 +19,10 @@ export default function App() {
     })
       .then(response => response.json())
       .then(data => setTodos(data))
-      .catch(error => console.error(error));
+      .catch(error => {
+        setError('Network call failed');
+        console.error(error);
+      });
 
   }, []);
 
@@ -42,7 +46,10 @@ export default function App() {
     fetch('/api/todos', { method: 'POST', body: JSON.stringify(newTodo), headers: { 'Content-Type': 'application/json' } })
       .then(response => response.json())
       .then(data => setTodos(todos.concat(data)))
-      .catch(error => console.error(error));
+      .catch(error => {
+        setError(error.message);
+        console.error(error);
+      });
   }
 
   function toggleCompleted(todoId) {
@@ -73,16 +80,20 @@ export default function App() {
     fetch(`/api/todos/${todoId}`, { method: 'PATCH', body: JSON.stringify(newTodo), headers: { 'Content-Type': 'application/json' } })
       .then(response => response.json())
       .then(data => setTodos(todos.map(todo => todo.todoId === todoId ? data : todo)))
-      .catch(error => console.error(error));
+      .catch(error => {
+        setError(error.message);
+        console.error(error);
+      });
   }
 
   return (
     <div className="container">
       <div className="row">
         <div className="col pt-5">
-          <PageTitle text="Todo App" />
-          <TodoForm onSubmit={addTodo} />
-          <TodoList todos={todos} toggleCompleted={toggleCompleted} />
+          {error && <p>{error}</p>}
+          {!error && <PageTitle text="Todo App" />}
+          {!error && <TodoForm onSubmit={addTodo} />}
+          {!error && <TodoList todos={todos} toggleCompleted={toggleCompleted} />}
         </div>
       </div>
     </div>
