@@ -15,12 +15,14 @@ export default function App() {
      * it with the parseRoute() function and update state
      * Clean up when the component unmounts.
      */
-    window.addEventListener('hashchange', () => {
+    function hash() {
       const route = parseRoute(window.location.hash);
       setRoute(route);
-    });
-    return () => window.removeEventListener('hashchange');
-  }, []);
+    }
+
+    window.addEventListener('hashchange', hash);
+    return () => window.removeEventListener('hashchange', hash);
+  }, [route]);
 
   function renderPage() {
     if (route.path === '') {
